@@ -51,3 +51,54 @@ Za pomocą komendy `ls` sprawdzam, czy na pewno utworzyłem obraz **alpine.img**
 s3jk1@hopper:~/qemu/alpine$ ls
 alpine.img  alpine-standard-3.12.0-x86_64.iso
 ```
+
+### Uruchamianie instalatora Alpine
+
+Rozpocząłem emulację QEMU z KVM i zainstalowałem Alpine Linux na obrazie **alpine.img**.
+
+Użyłem skryptu powłoki **install.sh**, aby rozpocząć instalację, ponieważ uważam, że ułatwi to późniejsze zrozumienie poolecenia i zmodyfikowanie.
+
+Aby utworzyć plik **install.sh** uruchomiłem następujące polecenie:
+
+```
+$ nano install.sh
+```
+
+W ten sposób otworzyłem edytor tekstowy GNU nano 4.8, w którym napisałem poniższy skrypt powłoki
+
+```
+kvm -hda alpine.img \
+    -cdrom alpine-standard-3.12.0-x86_64.iso \
+    -m 512 \
+    -net nic \
+    -net user \
+    -soundhw all \
+```
+
+Zapisałem plik za pomocą kombinacji klawiszy **CTRL** + **X**, a następnij wpisałem **Y**, aby potwierdzić, że chcę zmodyfikować bufor i potwierdziłem całość przyciskiem **ENTER**.
+
+W tym przypadku `-m 512` oznacza 512 MB pamięci (RAM), która została przydzielona maszynie wirtualnej.
+
+Teraz muszę zmienić ustawienia za pomocą `chmod`, tak aby skrypt powłoki **install.sh** był wykonywalny, robię to za pomocą poniższej komendy:
+
+```
+$ chmod +x install.sh
+```
+
+Gdy plik już otrzymał uprawnienia do bycia wykonywalnym, postanowiłem wystartować skrypt instalacyjny za pomocą poniższej komendy:
+
+```
+$ ./install.sh
+```
+
+Instalator Alpine zbootował się bez problemu, prosząc mnie o `localhost login`. Wpisałem tam **root** i zatwierdziłem operację przyciskiem **ENTER**. Bez problemu zalogowałem się.
+
+TUTAJ WKLEIĆ OBRAZKI
+
+Teraz wystartowałem instalator za pomocą poniższej komendy:
+
+```
+# setup-alpine
+```
+
+Instalator zapytał mnie o układ klawiatury, który chcę ustawić, z racji, że mieszkam w Polsce i korzystam z Polskiej klawiatury, wybrałem opcję **pl** i zatwierdziłem ją przyciskiem **ENTER**. Później gdy zapytano mnie o wariant, znowu wybrałem po prostu opcję **pl** i zatwierdziłem ją opcją **ENTER**. Gdy zostałem zapytanie o **hostname** uznałem, że wpiszę swój pseudonim internetowy **s3jk1*
