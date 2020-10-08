@@ -207,5 +207,26 @@ $ sudo apt install qemu-utils
 Gdy już wszystkie pakiety zostały zainstalowane postanowiłem utworzyć wirtualny dysk o pojemności 10GB.
 
 ```
-qemu-img create -f vdi hdd1.vdi 10G
+$ qemu-img create -f vdi hdd1.vdi 10G
+Formatting 'hdd1.vdi', fmt=vdi size=10737418240 static=off
 ```
+
+Następnie ściągnąłem [VirtualBox](https://www.virtualbox.org/wiki/Linux_Downloads) dla Ubuntu 20.04 z którego nacodzień korzystam i zainstalowałem ów program z instalatora `*.deb`.
+
+![07](/images/07.png)
+
+Program zaraz po zainstalowaniu zaprezentował się tak. Następnie zainstalowałem GParted, który będzie potrzebny do wykonania zadania. Wykonałem to za pomocą poniższego polecenia. Wpisałem hasło, wcisnąłem **Y** i zatwierdziłem wybór przyciskiem **ENTER**.
+
+```
+$ sudo apt-get install gparted
+```
+
+Po wpisaniu `gparted` w terminalu zostałem znowu poproszony o hasło, więc je wpisałem. Moim oczom ukazał się program GParted.
+
+![08](/images/08.png)
+![09](/images/09.png)
+![10](/images/10.png)
+![11](/images/11.png)
+![12](/images/12.png)
+![13](/images/13.png)
+![14](/images/14.png)
