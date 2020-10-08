@@ -93,8 +93,6 @@ $ ./install.sh
 
 Instalator Alpine zbootował się bez problemu, prosząc mnie o `localhost login`. Wpisałem tam **root** i zatwierdziłem operację przyciskiem **ENTER**. Bez problemu zalogowałem się.
 
-TUTAJ WKLEIĆ OBRAZKI
-
 Teraz wystartowałem instalator za pomocą poniższej komendy:
 
 ```
