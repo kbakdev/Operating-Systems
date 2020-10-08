@@ -197,8 +197,15 @@ Oczywiście zalogowałem się za pomocą danych, które podałem wcześniej przy
 
 ## QEmu - Utworzenie małego dysku wirtualnego i podpięcie go do maszyny wirtualnej
 
-Zacząłem od zainstalowania na swoim systemie QEmu za pomocą polecenia
+Zacząłem od zainstalowania na swoim systemie QEmu za pomocą poleceń:
 
 ```
-sudo apt-get install qemu
+$ sudo apt-get install qemu
+$ sudo apt install qemu-utils
+```
+
+Gdy już wszystkie pakiety zostały zainstalowane postanowiłem utworzyć wirtualny dysk o pojemności 10GB.
+
+```
+qemu-img create -f vdi hdd1.vdi 10G
 ```
