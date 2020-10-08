@@ -186,7 +186,7 @@ Zostałem zapytany czy zapisać zmodyfikowany bufor, potwierdziłem opcję wpisu
 $ chmod +x start.sh
 ```
 
-Na koniec uruchomiłem nowo zainstalowany system operacyjny Alpine za pomocą QEQMU KVM w następujący sposób:
+Na koniec uruchomiłem nowo zainstalowany system operacyjny Alpine za pomocą QEMU KVM w następujący sposób:
 
 ```
 $ ./start.sh
