@@ -1,6 +1,7 @@
 # PL
 
 ## QEmu - Proste uruchomienie Linuxa w wersji Live nie wymagającej dysku twardego
+## QEmu - Utworzenie małego dysku wirtualnego i podpięcie go do maszyny wirtualnej
 
 ### Instalacja
 
