@@ -1,7 +1,6 @@
 # PL
 
 ## QEmu - Proste uruchomienie Linuxa w wersji Live nie wymagającej dysku twardego
-## QEmu - Utworzenie małego dysku wirtualnego i podpięcie go do maszyny wirtualnej
 
 ### Instalacja
 
@@ -195,3 +194,5 @@ $ ./start.sh
 Oczywiście zalogowałem się za pomocą danych, które podałem wcześniej przy instalacji, czyli loginu **root** i hasła **admin123**.
 
 ![06](/images/06.png)
+
+## QEmu - Utworzenie małego dysku wirtualnego i podpięcie go do maszyny wirtualnej
