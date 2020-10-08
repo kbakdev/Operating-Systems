@@ -97,6 +97,8 @@ Gdy plik już otrzymał uprawnienia do bycia wykonywalnym, postanowiłem wystart
 $ ./install.sh
 ```
 
+![01](/images/01.png)
+
 Instalator Alpine zbootował się bez problemu, prosząc mnie o `localhost login`. Wpisałem tam **root** i zatwierdziłem operację przyciskiem **ENTER**. Bez problemu zalogowałem się.
 
 Teraz wystartowałem instalator za pomocą poniższej komendy:
@@ -105,7 +107,51 @@ Teraz wystartowałem instalator za pomocą poniższej komendy:
 # setup-alpine
 ```
 
-Instalator zapytał mnie o układ klawiatury, który chcę ustawić, z racji, że mieszkam w Polsce i korzystam z Polskiej klawiatury, wybrałem opcję **pl** i zatwierdziłem ją przyciskiem **ENTER**. Później gdy zapytano mnie o wariant, znowu wybrałem po prostu opcję **pl** i zatwierdziłem ją opcją **ENTER**. Gdy zostałem zapytanie o **hostname** uznałem, że wpiszę swój pseudonim internetowy **s3jk1**. **Hostname** zatwierdziłem przyciskiem **ENTER**. Zaraz po tym zostałem zapytany o interfejs sieciowy. Wartością domyślną jest **eth0**, co w moim przypadku się zgadza, więc nacisnąłem po prostu **ENTER**, aby wybrać domyślną opcję. Teraz instalator poprosił mnie o wpisanie adresu IP interfejsu sieciowego. Wybrałem domyślny, czyli adres IP przypisany przez dhcp. Do tej operacji wystarczyło wcisnąć dwa razy **ENTER** i przejść dalej. Przy drugim wciśnięciu klawisza **ENTER** instalator zapytał się jedynie, czy nie chcę manualnie zmieniać konfiguracji sieci, domyślnie była opcja **no**, a że nie chciałem niczego konfigurować, to po prostu kontynuowałem instalację. Po tym kroku zostałem zapytany o nowe hasło, z racji iż jest to projekt na uczelnię i nie chcę komplikować niczego, to wpisałem standardowo **admin123**, całą operację zatwierdziłem klawiszem **ENTER**. Następnie zostałem poproszony o powtórzenie hasła, więc wpisałem po raz kolejny **admin123** i potwierdziłem operację przyciskiem **ENTER**. Nadszedł czas, aby wybrać strefę czasową. Domyślnie jest to **UTC**, wybrałem ją domyślnie i wcisnąłem **ENTER**. Będąc zapytanym o **HTTP/FTP proxy URL** domyślnie wcisnąłem **ENTER** zatwierdzając wybór **none**. Kiedy zostałem zapytany o lustrzane obrazy, wcisnąłem po prostu **ENTER**, zatwierdzając operację, ponieważ domyślny wybór **dl-cdn.alpinelinux.org** mi pasował. Będąc zapytanym o **serwer SSH** wybrałem domyślnie **openssh**. Następnie w instalatorze pokazał mi się dostępny dysk, zostałem zapytany którego dysku chcę użyć, w tym wypadku nie miałem zbyt dużego wyboru, ponieważ stworzyłem tylko jeden. Wpisałem **sda**, aby wybrać ten jeden dysk, który został opisany w następujący sposób **8.6 GB ATA QEMU HARDDISK**. Potwierdziłem operację przyciskiem **ENTER**, instalator wypisał mi informację, że powyższy dysk został wybrany, a następnie zostałem zapytany w jaki sposób ma zostać użyty, czy ma być używany jako **sys**, **data**, **lvm**. Wybrałem opcję **sys** i potwierdziłem operację przyciskiem **ENTER**. Zostałem powiadomiony, że dany dysk zostanie wyczyszczony, jednak nie przejmowałem się tym za bardzo. Wyczyściłem wcześniej opisany dysk wpisując **Y** i zatwierdzając wybór przyciskiem **ENTER**. Alpine w tym momencie zaczęło się instalować. Cała operacja potrwała trochę dłużej. Po jakimś czasie Alpine Linux został zainstalowany. Zostałem poproszony o restart, więc wykonałem go za pomocą polecenia `reboot`. Po chwili zostałem znowu poproszony o zalogowanie się. W loginie wpisałem **root**, a hasłem było **admin123**. Tak więc instalacja przebiegła pomyślnie.
+![02](/images/02.png)
+
+Instalator zapytał mnie o układ klawiatury, który chcę ustawić, z racji, że mieszkam w Polsce i korzystam z Polskiej klawiatury, wybrałem opcję **pl** i zatwierdziłem ją przyciskiem **ENTER**.
+
+Później gdy zapytano mnie o wariant, znowu wybrałem po prostu opcję **pl** i zatwierdziłem ją opcją **ENTER**.
+
+Gdy zostałem zapytanie o **hostname** uznałem, że wpiszę swój pseudonim internetowy **s3jk1**. **Hostname** zatwierdziłem przyciskiem **ENTER**.
+
+![03](/images/03.png)
+
+Zaraz po tym zostałem zapytany o interfejs sieciowy. Wartością domyślną jest **eth0**, co w moim przypadku się zgadza, więc nacisnąłem po prostu **ENTER**, aby wybrać domyślną opcję.
+
+Teraz instalator poprosił mnie o wpisanie adresu IP interfejsu sieciowego. Wybrałem domyślny, czyli adres IP przypisany przez dhcp. Do tej operacji wystarczyło wcisnąć dwa razy **ENTER** i przejść dalej.
+
+Przy drugim wciśnięciu klawisza **ENTER** instalator zapytał się jedynie, czy nie chcę manualnie zmieniać konfiguracji sieci, domyślnie była opcja **no**, a że nie chciałem niczego konfigurować, to po prostu kontynuowałem instalację.
+
+Po tym kroku zostałem zapytany o nowe hasło, z racji iż jest to projekt na uczelnię i nie chcę komplikować niczego, to wpisałem standardowo **admin123**, całą operację zatwierdziłem klawiszem **ENTER**.
+
+Następnie zostałem poproszony o powtórzenie hasła, więc wpisałem po raz kolejny **admin123** i potwierdziłem operację przyciskiem **ENTER**.
+
+Nadszedł czas, aby wybrać strefę czasową. Domyślnie jest to **UTC**, wybrałem ją i wcisnąłem **ENTER**.
+
+Będąc zapytanym o **HTTP/FTP proxy URL** domyślnie wcisnąłem **ENTER** zatwierdzając wybór **none**.
+
+![04](/images/04.png)
+
+Kiedy zostałem zapytany o lustrzane obrazy, wcisnąłem po prostu **ENTER**, zatwierdzając operację, ponieważ domyślny wybór **dl-cdn.alpinelinux.org** mi pasował.
+
+Będąc zapytanym o **serwer SSH** wybrałem domyślnie **openssh**.
+
+Następnie w instalatorze pokazał mi się dostępny dysk, zostałem zapytany którego dysku chcę użyć, w tym wypadku nie miałem zbyt dużego wyboru, ponieważ stworzyłem tylko jeden. Wpisałem **sda**, aby wybrać ten jeden dysk, który został opisany w następujący sposób **8.6 GB ATA QEMU HARDDISK**. Potwierdziłem operację przyciskiem **ENTER**, instalator wypisał mi informację, że powyższy dysk został wybrany, a następnie zostałem zapytany w jaki sposób ma zostać użyty, czy ma być używany jako **sys**, **data**, **lvm**. Wybrałem opcję **sys** i potwierdziłem operację przyciskiem **ENTER**.
+
+Zostałem powiadomiony, że dany dysk zostanie wyczyszczony, jednak nie przejmowałem się tym za bardzo. Wyczyściłem wcześniej opisany dysk wpisując **Y** i zatwierdzając wybór przyciskiem **ENTER**.
+
+Alpine w tym momencie zaczęło się instalować. Cała operacja potrwała trochę dłużej.
+
+Po jakimś czasie Alpine Linux został zainstalowany.
+
+Zostałem poproszony o restart, więc wykonałem go za pomocą polecenia **reboot**.
+
+Po chwili zostałem znowu poproszony o zalogowanie się. W loginie wpisałem **root**, a hasłem było **admin123**.
+
+Tak więc instalacja przebiegła pomyślnie.
+
+![05](/images/05.png)
 
 ## Uruchamiane Alpine
 
@@ -144,3 +190,7 @@ Na koniec uruchomiłem nowo zainstalowany system operacyjny Alpine za pomocą QE
 ```
 $ ./start.sh
 ```
+
+Oczywiście zalogowałem się za pomocą danych, które podałem wcześniej przy instalacji, czyli loginu **s3jk1** i hasła **admin123**.
+
+![06](/images/06.png)
