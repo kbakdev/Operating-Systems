@@ -191,6 +191,6 @@ Na koniec uruchomiłem nowo zainstalowany system operacyjny Alpine za pomocą QE
 $ ./start.sh
 ```
 
-Oczywiście zalogowałem się za pomocą danych, które podałem wcześniej przy instalacji, czyli loginu **s3jk1** i hasła **admin123**.
+Oczywiście zalogowałem się za pomocą danych, które podałem wcześniej przy instalacji, czyli loginu **root** i hasła **admin123**.
 
 ![06](/images/06.png)
