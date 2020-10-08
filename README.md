@@ -196,3 +196,9 @@ Oczywiście zalogowałem się za pomocą danych, które podałem wcześniej przy
 ![06](/images/06.png)
 
 ## QEmu - Utworzenie małego dysku wirtualnego i podpięcie go do maszyny wirtualnej
+
+Zacząłem od zainstalowania na swoim systemie QEmu za pomocą polecenia
+
+```
+sudo apt-get install qemu
+```
