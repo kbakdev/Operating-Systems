@@ -224,6 +224,8 @@ $ sudo apt-get install gparted
 Po wpisaniu `gparted` w terminalu zostałem znowu poproszony o hasło, więc je wpisałem. Moim oczom ukazał się program GParted.
 
 ![08](/images/08.png)
+
+Później stworzyłem Wirtualną Maszynę na potrzeby zadania, jednak obraz ISO GParted Live nie chciał w żaden sposób wystartować.
 ![09](/images/09.png)
 ![10](/images/10.png)
 ![11](/images/11.png)
