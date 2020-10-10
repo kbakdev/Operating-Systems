@@ -226,9 +226,18 @@ Po wpisaniu `gparted` w terminalu zostałem znowu poproszony o hasło, więc je 
 ![08](/images/08.png)
 
 Później stworzyłem Wirtualną Maszynę na potrzeby zadania, jednak obraz ISO GParted Live nie chciał w żaden sposób wystartować.
+
 ![09](/images/09.png)
 ![10](/images/10.png)
 ![11](/images/11.png)
 ![12](/images/12.png)
 ![13](/images/13.png)
 ![14](/images/14.png)
+
+## Ustawić na maszynie wirtualnej dwie karty sieciowe
+
+![15](/images/15.png)
+![16](/images/16.png)
+![17](/images/17.png)
+![18](/images/18.png)
+![19](/images/19.png)
