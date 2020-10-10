@@ -258,10 +258,20 @@ Zapisałem opcję i znowu włączyłem maszynę wirtualną, wszedłem w terminal
 
 <hr>
 
-Wpisałem jeszcze raz w terminalu komendę, aby wyskoczyły mi adresy, tym razem w formie bardziej zrozumiałej za człowieka, posłużyła mi do tego poniższa komenda
+Wpisałem jeszcze raz w terminalu komendę, aby wyskoczyły mi adresy, tym razem w formie bardziej zrozumiałej za człowieka, posłużyła mi do tego poniższa komenda. Dzięki niej wyświetliłem trasę domyślną, która działa jako serwer DHCP w większości sieci domowych.
 
 ```
 $ ip r
 ```
 
 ![20](/images/20.png)
+
+Protokół DHCP umożliwia hostowi kontaktowanie się z serwerem centralnym, który przechowuje listę adresów IP, które mogą być przypisane do jednej lub wielu podsieci. Klient DHCP może zażądać adresu z tej puli, a następnie użyć go tymczasowo do komunikacji w sieci.
+
+Zwykle w większości sieci domowych lub małych firm internetowe Wi-Fi lub router działa również jako serwer DHCP.
+
+Znalazłem również domyślne adresy IP w narzędziu konfiguracji sieci GUI.
+
+![21](/images/21.png)
+
+![22](/images/22.png)
