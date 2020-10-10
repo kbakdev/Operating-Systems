@@ -255,3 +255,5 @@ W następnej kolejności wszedłem w zakładkę **Adapter 2**, gdzie zaznaczyłe
 Zapisałem opcję i znowu włączyłem maszynę wirtualną, wszedłem w terminal za pomocą kombinacji klawiszy **CTRL** + **ALT** + **T**, wpisałem tam `ip address`, aby wyświetliło mi wszystkie informacje na temat urządzeń sieciowych.
 
 ![19](/images/19.png)
+
+<hr>
