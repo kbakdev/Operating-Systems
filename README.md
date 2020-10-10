@@ -257,3 +257,11 @@ Zapisałem opcję i znowu włączyłem maszynę wirtualną, wszedłem w terminal
 ![19](/images/19.png)
 
 <hr>
+
+Wpisałem jeszcze raz w terminalu komendę, aby wyskoczyły mi adresy, tym razem w formie bardziej zrozumiałej za człowieka, posłużyła mi do tego poniższa komenda
+
+```
+$ ip r
+```
+
+![20](/images/20.png)
