@@ -236,8 +236,22 @@ Później stworzyłem Wirtualną Maszynę na potrzeby zadania, jednak obraz ISO 
 
 ## Ustawić na maszynie wirtualnej dwie karty sieciowe
 
+Zacząłem od stworzenia nowej maszyny wirtualnej na potrzeby tego zadania, postanowiłem wybrać MX z dystrybucji Linuxa. Nazwałem wirtualną maszynę **MX-19.2 Linux**, wybrałem ścieżkę `/home/s3jk1/VirtualBox VMs`, tam będzie znajdować się moja maszyna. Wybrałem również typ operacyjnego systemu i wersję, tak aby VM zadziałało. Później określiłem ile maszyna ma mieć przydzielonej pamięci itd.
+
 ![15](/images/15.png)
+
+Po zakończeniu instalacji wystartowałem maszynę, wszystko zadziałało jak trzeba. Dokończyłem instalację już w maszynie wirtualnej. Po zakończeniu instalacji zresetowałem system zgodnie z poleceniem instalatora.
+
 ![16](/images/16.png)
+
+Gdy już system włączył mi się drugi raz, wyłączyłem całą maszynę, zatrzymałem ją i wszedłem w ustawienia VM, przeszedłem w zakładkę network, a następnie w zakładce pierwszej zaznaczyłem opcję [x] **Enable Network Adapter** i wybrałem opcję **NAT** tak jak było to w poleceniu.
+
 ![17](/images/17.png)
+
+W następnej kolejności wszedłem w zakładkę **Adapter 2**, gdzie zaznaczyłem [x] **Enable Network Adapter** i wybrałem aby ten adapter był podpięty jako **Bridged Adapter**. Nazwę wybrało mi już domyślnie, więc jej nie zmieniałem.
+
 ![18](/images/18.png)
+
+Zapisałem opcję i znowu włączyłem maszynę wirtualną, wszedłem w terminal za pomocą kombinacji klawiszy **CTRL** + **ALT** + **T**, wpisałem tam `ip address`, aby wyświetliło mi wszystkie informacje na temat urządzeń sieciowych.
+
 ![19](/images/19.png)
